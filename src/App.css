@@ -1,38 +1,67 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: turquoise;
+}
+
+.logo {
+  align-items: center;
+  text-align: left;
+}
+.logoImg {
+  width: 35px;
+  margin: 1rem;
+}
+
+.nav {
+  background-color: white;
+  height: 20vw;
+  max-height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav__btn {
+  height: 100%;
+  width: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.window {
+  background-color: white;
+  margin: 2rem auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.avatar {
+  height: 100px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItem {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.listItem:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.listItem__title {
+  margin-left: 2rem;
 }
